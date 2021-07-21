@@ -10,4 +10,6 @@ Pod::Spec.new do |s|
   s.framework    = 'UIKit' #当前这个库所依赖的系统的库
   s.platform     = :ios
   s.requires_arc = true #是否支持arc
+  s.private_header_files = "AFramework/Core/APrivateTestClass.h"
+  s.public_header_files = "AFramework/Core/APublicClass.h"
 end
